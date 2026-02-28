@@ -120,7 +120,8 @@ jobs:
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v5
-        if: ${{ success() || failure() }}
+        #if: ${{ success() || failure() }}
+        if: false
         with:
           name: fdroid-${{ matrix.abi }}
           path: tmp/
