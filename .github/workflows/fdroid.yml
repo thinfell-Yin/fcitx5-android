@@ -118,10 +118,6 @@ jobs:
           cd $home_vagrant
           $fdroid build --verbose --test --scan-binary --on-server --no-tarball $build
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v5
-        #if: ${{ success() || failure() }}
-        if: false
-        with:
-          name: fdroid-${{ matrix.abi }}
-          path: tmp/
+      - name: Copy Apk
+        run: |
+          tar -czvf /home/thinfell/aikey.tar.gz tmp/fdroid-${{ matrix.abi }}
