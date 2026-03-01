@@ -120,4 +120,4 @@ jobs:
 
       - name: Copy Apk
         run: |
-          tar -czvf /home/thinfell/aikey.tar.gz tmp/fdroid-${{ matrix.abi }}
+          zip -r /home/thinfell/aikey.zip tmp/fdroid-${{ matrix.abi }}
