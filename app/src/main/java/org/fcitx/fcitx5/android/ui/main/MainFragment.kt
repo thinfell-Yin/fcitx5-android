@@ -45,7 +45,7 @@ class MainFragment : PaddingPreferenceFragment() {
             addCategory("Ai设置") {
                 addDestinationPreference(
                     R.string.renshe,
-                    R.drawable.ic_baseline_tune_24,
+                    R.drawable.ic_baseline_emoji_people_24,
                     SettingsRoute.RenShe
                 )
             }

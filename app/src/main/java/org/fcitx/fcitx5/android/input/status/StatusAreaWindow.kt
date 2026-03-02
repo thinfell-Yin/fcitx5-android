@@ -64,7 +64,7 @@ class StatusAreaWindow : InputWindow.ExtendedInputWindow<StatusAreaWindow>(),
             ),
             StatusAreaEntry.Android(
                 context.getString(R.string.renshe),
-                R.drawable.ic_baseline_language_24,
+                R.drawable.ic_baseline_emoji_people_24,
                 StatusAreaEntry.Android.Type.RenSet
             ),
             StatusAreaEntry.Android(
