@@ -66,6 +66,7 @@ sealed class SettingsRoute : Parcelable {
 
     /* ========== Android ========== */
 
+    @Serializable
     data object RenShe : SettingsRoute()
 
     @Serializable
