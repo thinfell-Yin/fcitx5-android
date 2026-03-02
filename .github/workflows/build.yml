@@ -1,4 +1,4 @@
-name: Android CI
+name: Manual Android Build
 
 on:
   workflow_dispatch:
