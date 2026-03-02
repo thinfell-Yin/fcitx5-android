@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name_release">AI输入法</string>
     <string name="app_name_debug">AI输入法</string>
+    <string name="app_name">AI输入法</string>
     <string name="save">저장</string>
     <string name="input_methods">입력기</string>
     <string name="add_input_method">입력기 추가</string>
