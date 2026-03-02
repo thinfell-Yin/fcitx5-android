@@ -2,9 +2,18 @@ name: Manual Android Build
 
 on:
   workflow_dispatch:
+    inputs:
+      build_type:
+        description: 'Build Type'
+        required: true
+        default: 'debug'
+        type: choice
+        options:
+          - debug
+          - release
 
 jobs:
-  build:
+  develop:
     #runs-on: ubuntu-24.04
     runs-on: self-hosted
     steps:
@@ -20,7 +29,11 @@ jobs:
         with:
           name: fcitx5-android
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
-      - name: Build Release APK
+      - name: Build
         run: |
           nix develop .#noAS --command ./gradlew :app:clean
-          nix develop .#noAS --command ./gradlew :app:assembleDebug
+          if [ "${{ github.event.inputs.build_type }}" = "debug" ]; then
+            nix develop .#noAS --command ./gradlew :app:assembleDebug
+          else
+            nix develop .#noAS --command ./gradlew :app:assemblePaidRelease
+          fi
