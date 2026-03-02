@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name_release">AI输入法</string>
     <string name="app_name_debug">AI输入法</string>
+    <string name="app_name" translatable="false">AI输入法</string>
     <string name="save">Save</string>
     <string name="input_methods">Input Methods</string>
     <string name="add_input_method">Add Input Method</string>
@@ -11,14 +12,14 @@
     <string name="behavior">Behavior</string>
     <string name="advanced">Advanced</string>
     <string name="ignore_sys_cursor">Ignore system cursor position</string>
-    <string name="hide_key_config">Hide hotkey configurations</string>
+    <string name="hide_key_config" translatable="false">Hide hotkey configurations</string>
     <string name="_not_available_">(Not Available)</string>
-    <string name="button_haptic_feedback">Haptic feedback on keypress</string>
-    <string name="button_up_haptic_feedback">Haptic feedback on keyup</string>
-    <string name="button_vibration_milliseconds">Keypress vibration duration</string>
-    <string name="button_press">Press</string>
-    <string name="button_long_press">Long press</string>
-    <string name="button_vibration_amplitude">Keypress vibration amplitude</string>
+    <string name="button_haptic_feedback" translatable="false">Haptic feedback on keypress</string>
+    <string name="button_up_haptic_feedback" translatable="false">Haptic feedback on keyup</string>
+    <string name="button_vibration_milliseconds" translatable="false">Keypress vibration duration</string>
+    <string name="button_press" translatable="false">Press</string>
+    <string name="button_long_press" translatable="false">Long press</string>
+    <string name="button_vibration_amplitude" translatable="false">Keypress vibration amplitude</string>
     <string name="add">Add</string>
     <string name="edit">Edit</string>
     <string name="undo">Undo</string>
