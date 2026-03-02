@@ -1,12 +1,10 @@
-name: Nix
+name: Android CI
 
 on:
-  pull_request:
-  push:
-    branches: [master]
+  workflow_dispatch:
 
 jobs:
-  develop:
+  build:
     #runs-on: ubuntu-24.04
     runs-on: self-hosted
     steps:
