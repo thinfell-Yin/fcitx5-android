@@ -17,6 +17,7 @@ sealed class StatusAreaEntry(
     class Android(label: String, icon: Int, val type: Type) :
         StatusAreaEntry(label, icon, false) {
         enum class Type {
+            InputSet,
             InputMethod,
             ReloadConfig,
             Keyboard,
