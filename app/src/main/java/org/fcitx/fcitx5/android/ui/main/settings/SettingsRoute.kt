@@ -29,6 +29,7 @@ import org.fcitx.fcitx5.android.ui.main.settings.behavior.AdvancedSettingsFragme
 import org.fcitx.fcitx5.android.ui.main.settings.behavior.CandidatesSettingsFragment
 import org.fcitx.fcitx5.android.ui.main.settings.behavior.ClipboardSettingsFragment
 import org.fcitx.fcitx5.android.ui.main.settings.behavior.KeyboardSettingsFragment
+import org.fcitx.fcitx5.android.ui.main.settings.renshe.RenSheFragment
 import org.fcitx.fcitx5.android.ui.main.settings.behavior.SymbolSettingsFragment
 import org.fcitx.fcitx5.android.ui.main.settings.global.GlobalConfigFragment
 import org.fcitx.fcitx5.android.ui.main.settings.im.InputMethodConfigFragment
@@ -64,6 +65,8 @@ sealed class SettingsRoute : Parcelable {
     data class AddonConfig(val name: String, val uniqueName: String) : SettingsRoute()
 
     /* ========== Android ========== */
+
+    data object RenShe : SettingsRoute()
 
     @Serializable
     data object Theme : SettingsRoute()
@@ -203,6 +206,10 @@ sealed class SettingsRoute : Parcelable {
             fragment<AddonConfigFragment, AddonConfig>()
 
             /* ========== Android ========== */
+
+            fragment<RenSheFragment,RenShe> {
+                label = ctx.getString(R.string.renshe)
+            }
 
             fragment<ThemeFragment, Theme> {
                 label = ctx.getString(R.string.theme)

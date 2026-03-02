@@ -3,6 +3,7 @@
     <string name="app_name_release">AI输入法</string>
     <string name="app_name_debug">AI输入法</string>
     <string name="app_name">AI输入法</string>
+    <string name="renshe" translatable="false">聊天人设</string>
     <string name="save">Save</string>
     <string name="input_methods">Input Methods</string>
     <string name="add_input_method">Add Input Method</string>

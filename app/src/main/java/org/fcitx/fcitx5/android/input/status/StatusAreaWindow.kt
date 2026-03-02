@@ -63,9 +63,9 @@ class StatusAreaWindow : InputWindow.ExtendedInputWindow<StatusAreaWindow>(),
                 ThemeList
             ),
             StatusAreaEntry.Android(
-                context.getString(R.string.input_method_options),
+                context.getString(R.string.renshe),
                 R.drawable.ic_baseline_language_24,
-                StatusAreaEntry.Android.Type.InputSet
+                StatusAreaEntry.Android.Type.RenSet
             ),
             StatusAreaEntry.Android(
                 context.getString(R.string.reload_config),
@@ -150,7 +150,7 @@ class StatusAreaWindow : InputWindow.ExtendedInputWindow<StatusAreaWindow>(),
                                 Toast.makeText(service, R.string.done, Toast.LENGTH_SHORT).show()
                             }
                         }
-                        StatusAreaEntry.Android.Type.InputSet -> AppUtil.launchMain(context)
+                        StatusAreaEntry.Android.Type.RenSet -> AppUtil.launchMainToRenshe(context)
                         Keyboard -> AppUtil.launchMainToKeyboard(context)
                         ThemeList -> AppUtil.launchMainToThemeList(context)
                     }

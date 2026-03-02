@@ -42,6 +42,13 @@ class MainFragment : PaddingPreferenceFragment() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         preferenceScreen = preferenceManager.createPreferenceScreen(requireContext()).apply {
+            addCategory("Ai设置") {
+                addDestinationPreference(
+                    R.string.renshe,
+                    R.drawable.ic_baseline_tune_24,
+                    SettingsRoute.RenShe
+                )
+            }
             addCategory(R.string.input_method_options) {
                 addDestinationPreference(
                     R.string.global_options,

@@ -33,6 +33,9 @@ object AppUtil {
         }
     }
 
+    fun launchMainToRenshe(context: Context) =
+        launchMainToDest(context, SettingsRoute.RenShe)
+
     fun launchMainToKeyboard(context: Context) =
         launchMainToDest(context, SettingsRoute.VirtualKeyboard)
 
